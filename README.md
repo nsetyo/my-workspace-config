@@ -1,23 +1,6 @@
 ### My Daily Workspace Configuration
 
-[?25l[?7l[0m[34m[1m          /:-------------:\
-       :-------------------::
-     :-----------[37m[0m[1m/shhOHbmp[0m[34m[1m---:\
-   /-----------[37m[0m[1momMMMNNNMMD  [0m[34m[1m---:
-  :-----------[37m[0m[1msMMMMNMNMP[0m[34m[1m.    ---:
- :-----------[37m[0m[1m:MMMdP[0m[34m[1m-------    ---\
-,------------[37m[0m[1m:MMMd[0m[34m[1m--------    ---:
-:------------[37m[0m[1m:MMMd[0m[34m[1m-------    .---:
-:----    [37m[0m[1moNMMMMMMMMMNho[0m[34m[1m     .----:
-:--     .[37m[0m[1m+shhhMMMmhhy++[0m[34m[1m   .------/
-:-    -------[37m[0m[1m:MMMd[0m[34m[1m--------------:
-:-   --------[37m[0m[1m/MMMd[0m[34m[1m-------------;
-:-    ------[37m[0m[1m/hMMMy[0m[34m[1m------------:
-:--[37m[0m[1m :dMNdhhdNMMNo[0m[34m[1m------------;
-:---[37m[0m[1m:sdNMMMMNds:[0m[34m[1m------------:
-:------[37m[0m[1m:://:[0m[34m[1m-------------::
-:---------------------://[0m
-
+![Screenshot](./screenshot.png)
 
 - **OS**: [Fedora](https://getfedora.org/)
 - **Terminal**: [Kitty](https://sw.kovidgoyal.net/kitty/)
@@ -39,3 +22,4 @@
 5. [Brightnessctl](https://github.com/Hummer12007/brightnessctl)
 6. [Playerctl](https://github.com/altdesktop/playerctl)
 7. [NetworkManager-tui](https://pkgs.org/download/networkmanager-tui)
+8. [Gammastep](https://gitlab.com/chinstrap/gammastep)
