@@ -1,0 +1,72 @@
+{
+    "breadcrumbs.symbolPath": "off",
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.accessibilitySupport": "off",
+    "editor.dragAndDrop": false,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontSize": 14,
+    "editor.formatOnSave": true,
+    "editor.lineHeight": 32,
+    "editor.links": false,
+    "editor.matchBrackets": "never",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    },
+    "editor.renderWhitespace": "selection",
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "editor.smoothScrolling": true,
+    "editor.snippetSuggestions": "top",
+    "editor.tabSize": 4,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "entity.name.section.markdown",
+                    "punctuation.definition.heading.markdown"
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
+            },
+        ]
+    },
+    "editor.wordWrap": "off",
+    "emmet.triggerExpansionOnTab": true,
+    "explorer.enableDragAndDrop": false,
+    "explorer.openEditors.visible": 0,
+    "files.associations": {
+        "*.neon": "yaml"
+    },
+    "files.trimTrailingWhitespace": true,
+    "html.format.indentHandlebars": true,
+    "keyboard.dispatch": "keyCode",
+    "php.suggest.basic": false,
+    "php.validate.enable": false,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "terminal.integrated.rendererType": "dom",
+    "terminal.integrated.scrollback": 5000,
+    "window.closeWhenEmpty": false,
+    "window.zoomLevel": 0,
+    "workbench.activityBar.visible": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.list.horizontalScrolling": true,
+    "workbench.sideBar.location": "right",
+    "material-icon-theme.activeIconPack": "none",
+    "material-icon-theme.folders.theme": "classic",
+    "timeline.pageSize": 0,
+    "workbench.colorTheme": "Dracula",
+    "window.menuBarVisibility": "toggle",
+    "material-icon-theme.folders.color": "#42a5f5",
+    "material-icon-theme.saturation": 1,
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    }
+}
