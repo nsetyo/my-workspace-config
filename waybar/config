@@ -1,0 +1,149 @@
+[{
+    "name": "topbar",
+    "layer": "bottom",
+    "position": "top",
+    "height": 30,
+    "modules-left": [
+        "sway/window",
+        "sway/mode",
+    ],
+    "modules-center": [
+    ],
+    "modules-right": [
+        "network",
+        "pulseaudio",
+        "cpu",
+        "memory",
+        "disk",
+        "temperature",
+        "backlight",
+        "idle_inhibitor",
+        "battery",
+        "clock",
+    ],
+    "sway/mode": {
+    },
+    "tray": {
+        "spacing": 10
+    },
+    "clock": {
+        "format": "{:%A, %d %B %Y %H:%M}",
+        "timezone": "Asia/Jakarta",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "cpu": {
+        "format": "{usage}% ",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "{}% "
+    },
+    "disk": {
+        "interval": 120,
+        "format": "{percentage_used}% ",
+        "path": "/"
+    },
+    "temperature": {
+        "critical-threshold": 80,
+        "format": "{icon} {temperatureC}°C",
+        "format-icons": [
+            "",
+            "",
+            ""
+        ]
+    },
+    "backlight": {
+        "format": "{icon} {percent}%",
+        "format-icons": [
+            "",
+            ""
+        ],
+        "on-scroll-down": "brightnessctl set 5%-",
+        "on-scroll-up": "brightnessctl set +5%",
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    },
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": "{capacity}% ⚡",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    "network": {
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "on-click": "kitty --class nmtui-connect --title nmtui -e nmtui connect"
+    },
+    "pulseaudio": {
+        "format": "{volume}% {icon} - {format_source}",
+        "format-bluetooth": "{volume}% {icon}  {format_source}",
+        "format-bluetooth-muted": " {icon}  {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": [ "", "", "" ]
+        },
+        "on-click": "pavucontrol"
+    },
+},
+{
+    "layer": "bottom",
+    "position": "bottom",
+    "height": 30,
+    "modules-left": [
+        "sway/workspaces",
+    ],
+    "modules-center": [
+        "custom/media"
+    ],
+    "modules-right": [
+        "tray"
+    ],
+    "sway/workspaces": {
+        "all-outputs": false,
+        "format": "{icon}",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": ""
+        }
+    },
+    "custom/media": {
+        "format": "{icon} {}",
+        "return-type": "json",
+        "max-length": 40,
+        "format-icons": {
+            "spotify": "",
+            "default": "🎜"
+        },
+        "escape": true,
+        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null"
+    }
+}]

@@ -1,0 +1,184 @@
+/**
+ * danger:  #f44336
+ * warning: #ffc107
+ */
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "Fira Code", "Font Awesome 5 Free", "Font Awesome 5 Brands", monospace;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: rgba(40, 42, 54, .95);
+    border-bottom: 1px solid rgba(40, 42, 54, 1);
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+#waybar .modules-left {
+    margin-left: 8px;
+}
+
+#waybar .modules-right {
+    margin-right: 8px;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+window#waybar.termite {
+    background-color: #3F3F3F;
+}
+
+window#waybar.chromium {
+    background-color: #000000;
+    border: none;
+}
+
+window#waybar .modules-right widget * {
+    padding-left: 12px;
+}
+
+window#waybar .modules-right widget:not(:last-child) * {
+    padding-right: 12px;
+}
+
+window.topbar .modules-right widget:not(:first-child) * {
+    border-left: 1px solid rgba(0, 0, 0, .2);
+}
+
+#window {
+}
+
+#workspaces button {
+    background-color: transparent;
+    /* Use box-shadow instead of border so the text isn't offset */
+    box-shadow: inset 0 -3px transparent;
+    color: #ffffff;
+    padding: 0 5px;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+#workspaces button:hover {
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: inset  0 3px #ffffff;
+}
+
+#workspaces button.focused {
+    background-color: #64727D;
+    box-shadow: inset 0 3px #ffffff;
+}
+
+#workspaces button.urgent {
+    background-color: #ffc107;
+}
+
+#mode {
+    background-color: #64727D;
+    border-bottom: 3px solid #ffffff;
+}
+
+#window, #workspaces {
+    margin: 0 4px;
+}
+
+#battery {
+}
+
+#battery.charging {
+    color: #2ecc71;
+}
+
+@keyframes blink {
+    to {
+        color: #ffffff;
+    }
+}
+
+#battery.warning:not(.charging) {
+    color: #ffc107;
+}
+
+#battery.critical:not(.charging) {
+    color: #f44336;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#cpu {
+}
+
+#mode {
+    padding: 0 8px;
+}
+
+#memory {
+}
+
+#backlight {
+}
+
+#network {
+}
+
+#network.disconnected {
+    color: #f44336;
+}
+
+#pulseaudio {
+}
+
+#pulseaudio.muted {
+}
+
+#custom-media {
+}
+
+#custom-media.custom-spotify {
+}
+
+#custom-media.custom-vlc {
+}
+
+#temperature {
+}
+
+#temperature.critical {
+    color: #f44336;
+}
+
+#tray {
+}
+
+#idle_inhibitor {
+}
+
+#idle_inhibitor.activated {
+}
+
+#mpd {
+}
+
+#mpd.disconnected {
+}
+
+#mpd.stopped {
+}
+
+#mpd.paused {
+}
+
+#language {
+}
