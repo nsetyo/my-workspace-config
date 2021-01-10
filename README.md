@@ -2,6 +2,8 @@
 
 ![Screenshot](./screenshot.png)
 
+
+### Configurations
 - **OS**: [Fedora](https://getfedora.org/)
 - **Terminal**: [Kitty](https://sw.kovidgoyal.net/kitty/)
 - **Shell**: Zsh with [OhMyZsh](https://ohmyz.sh/) 
