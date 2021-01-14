@@ -1,5 +1,5 @@
 {
-    "breadcrumbs.symbolPath": "off",
+    "breadcrumbs.enabled": false,
     "editor.acceptSuggestionOnEnter": "off",
     "editor.accessibilitySupport": "off",
     "editor.dragAndDrop": false,
@@ -10,6 +10,7 @@
     "editor.links": false,
     "editor.matchBrackets": "never",
     "editor.multiCursorModifier": "ctrlCmd",
+    "editor.padding.top": 16,
     "editor.quickSuggestions": {
         "other": true,
         "comments": false,
@@ -27,8 +28,15 @@
         "textMateRules": [
             {
                 "scope": [
+                    "comment",
                     "entity.name.section.markdown",
-                    "punctuation.definition.heading.markdown"
+                    "entity.name.type",
+                    "punctuation.definition.heading.markdown",
+                    "punctuation.definition.comment",
+                    "support",
+                    "variable.language.this",
+                    "variable.other.property",
+                    "variable.parameter"
                 ],
                 "settings": {
                     "fontStyle": ""
@@ -62,7 +70,7 @@
     "material-icon-theme.activeIconPack": "none",
     "material-icon-theme.folders.theme": "classic",
     "timeline.pageSize": 0,
-    "workbench.colorTheme": "Dracula",
+    "workbench.colorTheme": "One Dark Pro",
     "window.menuBarVisibility": "toggle",
     "material-icon-theme.folders.color": "#42a5f5",
     "material-icon-theme.saturation": 1,
