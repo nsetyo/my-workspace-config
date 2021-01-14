@@ -1,0 +1,3 @@
+[hostname]
+ssh_only = false
+style = "bold blue"
