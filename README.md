@@ -6,7 +6,7 @@
 ### Configurations
 - **OS**: [Fedora](https://getfedora.org/)
 - **Terminal**: [Kitty](https://sw.kovidgoyal.net/kitty/)
-- **Shell**: Zsh with [OhMyZsh](https://ohmyz.sh/) 
+- **Shell**: Bash with [Starship](https://starship.rs/) 
 - **WM**: [Sway](https://github.com/swaywm/sway)
 - **Panel**: [Waybar](https://github.com/Alexays/Waybar)
 - **Launcher**: [Wofi](https://hg.sr.ht/~scoopta/wofi)
