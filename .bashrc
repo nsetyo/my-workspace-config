@@ -15,6 +15,10 @@ export PATH
 
 # User specific aliases and functions
 
+if [ -f ~/.aliases ]; then
+    . ~/.aliases
+fi
+
 export EDITOR=vim
 
 if command -v starship &> /dev/null
