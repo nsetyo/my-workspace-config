@@ -19,6 +19,8 @@ if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
 
+export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
+
 export EDITOR=vim
 
 if command -v starship &> /dev/null
@@ -26,5 +28,7 @@ then
     eval "$(starship init bash)"
 fi
 
+
 bind '"\e[1;5A":history-search-backward'
 bind '"\e[1;5B":history-search-forward'
+
