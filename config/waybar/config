@@ -29,7 +29,8 @@
     "clock": {
         "format": "{:%A, %d %B %Y %H:%M}",
         "timezone": "Asia/Jakarta",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "locale": "id_ID"
     },
     "cpu": {
         "format": "{usage}% ",
