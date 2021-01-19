@@ -19,9 +19,9 @@ if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
 
-export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
-
-export EDITOR=vim
+if [ -f ~/.environment ]; then
+    . ~/.environment
+fi
 
 if command -v starship &> /dev/null
 then
