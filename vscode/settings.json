@@ -2,6 +2,9 @@
     "breadcrumbs.enabled": false,
     "editor.acceptSuggestionOnEnter": "off",
     "editor.accessibilitySupport": "off",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
     "editor.dragAndDrop": false,
     "editor.fontFamily": "Fira Code",
     "editor.fontSize": 14,
@@ -36,6 +39,7 @@
                     "punctuation.definition.heading.markdown",
                     "punctuation.definition.comment",
                     "support",
+                    "variable.language",
                     "variable.language.this",
                     "variable.other.property",
                     "variable.parameter"
@@ -62,21 +66,38 @@
     "telemetry.enableTelemetry": false,
     "terminal.integrated.rendererType": "dom",
     "terminal.integrated.scrollback": 5000,
+    "timeline.pageSize": 0,
     "window.closeWhenEmpty": false,
+    "window.menuBarVisibility": "toggle",
     "window.zoomLevel": 0,
     "workbench.activityBar.visible": false,
+    "workbench.colorTheme": "Community Material Theme Palenight",
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.list.horizontalScrolling": true,
     "workbench.sideBar.location": "right",
     "material-icon-theme.activeIconPack": "none",
     "material-icon-theme.folders.theme": "classic",
-    "timeline.pageSize": 0,
-    "workbench.colorTheme": "Community Material Theme Palenight",
-    "window.menuBarVisibility": "toggle",
     "material-icon-theme.folders.color": "#42a5f5",
     "material-icon-theme.saturation": 1,
+    "vetur.format.enable": false,
+    "vetur.format.options.tabSize": 4,
+    "vetur.format.defaultFormatter.js": "vscode-typescript",
+    "vetur.format.defaultFormatter.postcss": "none",
+    "vetur.format.defaultFormatter.html": "none",
+    "vetur.format.defaultFormatterOptions": {
+        "prettier": {
+            // Prettier option here
+        }
+    },
+    "vetur.useWorkspaceDependencies": true,
     "[markdown]": {
         "files.trimTrailingWhitespace": false
-    }
+    },
+    "[typescript]": {
+        "editor.formatOnSave": false
+    },
+    "[javascript]": {
+        "editor.formatOnSave": false
+    },
 }
