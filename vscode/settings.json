@@ -1,5 +1,5 @@
 {
-    "breadcrumbs.enabled": false,
+    "diffEditor.ignoreTrimWhitespace": false,
     "editor.acceptSuggestionOnEnter": "off",
     "editor.accessibilitySupport": "off",
     "editor.codeActionsOnSave": {
@@ -7,8 +7,10 @@
     },
     "editor.dragAndDrop": false,
     "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
     "editor.fontSize": 14,
     "editor.formatOnSave": true,
+    "editor.gotoLocation.multipleDefinitions": "goto",
     "editor.lineHeight": 36,
     "editor.links": false,
     "editor.matchBrackets": "never",
@@ -22,7 +24,7 @@
     "editor.renderWhitespace": "selection",
     "editor.rulers": [
         80,
-        120
+        120,
     ],
     "editor.smoothScrolling": true,
     "editor.snippetSuggestions": "top",
@@ -60,6 +62,7 @@
     "files.trimTrailingWhitespace": true,
     "html.format.indentHandlebars": true,
     "keyboard.dispatch": "keyCode",
+    "npm.fetchOnlinePackageInfo": false,
     "php.suggest.basic": false,
     "php.validate.enable": false,
     "telemetry.enableCrashReporter": false,
@@ -67,19 +70,40 @@
     "terminal.integrated.rendererType": "dom",
     "terminal.integrated.scrollback": 5000,
     "timeline.pageSize": 0,
+    "update.showReleaseNotes": false,
     "window.closeWhenEmpty": false,
     "window.menuBarVisibility": "toggle",
     "window.zoomLevel": 0,
-    "workbench.activityBar.visible": false,
+    "workbench.activityBar.visible": true,
     "workbench.colorTheme": "Community Material Theme Palenight",
     "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.enableExperiments": false,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.list.horizontalScrolling": true,
+    "workbench.settings.enableNaturalLanguageSearch": false,
     "workbench.sideBar.location": "right",
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    },
+    "[typescript]": {
+        "editor.formatOnSave": false
+    },
+    "[javascript]": {
+        "editor.formatOnSave": false
+    },
+    // Extension Related Setting
     "material-icon-theme.activeIconPack": "none",
-    "material-icon-theme.folders.theme": "classic",
     "material-icon-theme.folders.color": "#42a5f5",
+    "material-icon-theme.folders.theme": "classic",
     "material-icon-theme.saturation": 1,
+    "remote.containers.dockerPath": "/home/nsetyo/.local/bin/docker.sh",
+    "remote.containers.defaultExtensions": [
+        "eamodio.gitlens",
+        "Gruntfuggly.todo-tree",
+        "sleistner.vscode-fileutils",
+        "wwm.better-align"
+    ],
+    "todo-tree.tree.showScanModeButton": false,
     "vetur.format.enable": false,
     "vetur.format.options.tabSize": 4,
     "vetur.format.defaultFormatter.js": "vscode-typescript",
@@ -91,13 +115,4 @@
         }
     },
     "vetur.useWorkspaceDependencies": true,
-    "[markdown]": {
-        "files.trimTrailingWhitespace": false
-    },
-    "[typescript]": {
-        "editor.formatOnSave": false
-    },
-    "[javascript]": {
-        "editor.formatOnSave": false
-    },
 }
