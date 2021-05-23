@@ -8,8 +8,7 @@ export ZSH="$HOME/.local/share/oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="robbyrussell"
-ZSH_THEME="spaceship"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -98,6 +97,10 @@ fi
 
 if [ -f ~/.aliases ]; then
     source ~/.aliases
+fi
+
+if [ -f ~/.local/share/cargo/env ]; then
+    source ~/.local/share/cargo/env
 fi
 
 if command -v starship &> /dev/null

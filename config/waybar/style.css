@@ -90,27 +90,39 @@ window.topbar .modules-right widget:not(:first-child) * {
 #battery {
 }
 
-#battery.charging {
-    color: #2ecc71;
-}
-
 @keyframes blink {
     to {
-        color: #ffffff;
+        background-color: transparent;
     }
 }
 
 #battery.warning:not(.charging) {
-    color: #ffc107;
+    background-color: #ffc107;
+    animation-duration: 1000ms;
 }
 
 #battery.critical:not(.charging) {
-    color: #f44336;
+    background-color: #f44336;
+    animation-duration: 500ms;
+}
+
+#battery.warning:not(.charging),
+#battery.critical:not(.charging),
+#battery.charging.over  {
     animation-name: blink;
-    animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    transition-duration: 0ms;
+}
+
+#battery.charging {
+    color: #2ecc71;
+}
+
+#battery.charging.over {
+    background-color: #2ecc71;
+    color: #ffffff;
+    animation-duration: 1000ms;
 }
 
 label:focus {

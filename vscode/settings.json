@@ -34,10 +34,14 @@
             {
                 "scope": [
                     "comment",
+                    "comment.block.documentation",
+                    "comment.line.double-slash",
+                    "comment punctuation.definition.comment",
                     "entity.name.section.markdown",
                     "entity.name.type",
                     "entity.other.attribute-name",
                     "keyword.control",
+                    "keyword.control.flow.python",
                     "punctuation.definition.heading.markdown",
                     "punctuation.definition.comment",
                     "support",
@@ -73,9 +77,8 @@
     "update.showReleaseNotes": false,
     "window.closeWhenEmpty": false,
     "window.menuBarVisibility": "toggle",
-    "window.zoomLevel": 0,
     "workbench.activityBar.visible": true,
-    "workbench.colorTheme": "Community Material Theme Palenight",
+    "workbench.colorTheme": "One Dark Pro",
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.enableExperiments": false,
     "workbench.iconTheme": "material-icon-theme",
@@ -104,15 +107,16 @@
         "wwm.better-align"
     ],
     "todo-tree.tree.showScanModeButton": false,
-    "vetur.format.enable": false,
-    "vetur.format.options.tabSize": 4,
-    "vetur.format.defaultFormatter.js": "vscode-typescript",
-    "vetur.format.defaultFormatter.postcss": "none",
-    "vetur.format.defaultFormatter.html": "none",
-    "vetur.format.defaultFormatterOptions": {
-        "prettier": {
-            // Prettier option here
-        }
-    },
-    "vetur.useWorkspaceDependencies": true,
+    "polacode.target": "snippet",
+    "polacode.transparentBackground": true,
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "XXX",
+        "[ ]",
+        "[x]"
+    ],
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
 }

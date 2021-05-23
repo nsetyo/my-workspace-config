@@ -9,3 +9,5 @@
 export EDITOR="vim"
 
 export DOCKER_HOST="unix://$XDG_RUNTIME_DIR/docker.sock"
+
+export CONTAINERS_DIR="/home/nsetyo/Documents/Project/Containers"

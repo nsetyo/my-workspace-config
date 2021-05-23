@@ -1,2 +1,2 @@
-alias code='flatpak run com.vscodium.codium'
+alias code='flatpak run com.visualstudio.code'
 alias docc='docker-compose'
