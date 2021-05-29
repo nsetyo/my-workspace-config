@@ -42,13 +42,14 @@
                     "entity.other.attribute-name",
                     "keyword.control",
                     "keyword.control.flow.python",
+                    "keyword.control.import.python",
                     "punctuation.definition.heading.markdown",
                     "punctuation.definition.comment",
                     "support",
                     "variable.language",
                     "variable.language.this",
                     "variable.other.property",
-                    "variable.parameter"
+                    "variable.parameter",
                 ],
                 "settings": {
                     "fontStyle": ""
@@ -119,4 +120,10 @@
         "[x]"
     ],
     "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
 }

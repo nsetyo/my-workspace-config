@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+tfile=$(mktemp)
+
+wget -q https://source.unsplash.com/featured/1920x1080/?landscape,city -O $tfile
+
+echo $tfile

@@ -25,7 +25,7 @@ set $menu dmenu_path | wofi --show drun -i | xargs swaymsg exec --
 ### Output configuration
 
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-set $wallpaper ~/.wallpaper.jpg fill
+set $wallpaper `~/Documents/Repository/my-workspace-config/scripts/randombg` fill
 
 # Worspace name
 set $ws1 1:

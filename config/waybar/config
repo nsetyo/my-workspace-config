@@ -4,12 +4,15 @@
     "position": "top",
     "height": 30,
     "modules-left": [
-        "sway/window",
+        "sway/workspaces",
         "sway/mode",
+        "sway/window",
+        "custom/separator",
     ],
     "modules-center": [
     ],
     "modules-right": [
+        "custom/separator2",
         "network",
         "pulseaudio",
         "cpu",
@@ -18,13 +21,13 @@
         "temperature",
         "backlight",
         "idle_inhibitor",
+        "custom/separator",
+        "custom/separator2",
+        "tray",
         "battery",
         "clock",
     ],
     "sway/mode": {
-    },
-    "tray": {
-        "spacing": 10
     },
     "clock": {
         "format": "{:%A, %d %B %Y %H:%M}",
@@ -37,7 +40,12 @@
         "tooltip": false
     },
     "memory": {
-        "format": "{}% "
+        "format": "{}% ",
+        "states": {
+            "safe": 0,
+            "warning": 60,
+            "critical": 80,
+        },
     },
     "disk": {
         "interval": 120,
@@ -113,33 +121,26 @@
         },
         "on-click": "pavucontrol"
     },
-},
-{
-    "layer": "bottom",
-    "position": "bottom",
-    "height": 30,
-    "modules-left": [
-        "sway/workspaces",
-    ],
-    "modules-center": [
-        "custom/media"
-    ],
-    "modules-right": [
-        "tray"
-    ],
+    "tray": {
+       "icon-size": 12,
+        "spacing": 10
+    },
     "sway/workspaces": {
         "all-outputs": false,
         "format": "{name}",
     },
-    "custom/media": {
-        "format": "{icon} {}",
-        "return-type": "json",
-        "max-length": 40,
-        "format-icons": {
-            "spotify": "",
-            "default": "🎜"
-        },
-        "escape": true,
-        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null"
+    "sway/window": {
+        "max-length": 50,
+    },
+    "custom/separator": {
+        "format": " ",
+        "interval": "once",
+        "tooltip": false
+    },
+    "custom/separator2": {
+        "format": " ",
+        "interval": "once",
+        "tooltip": false
     }
-}]
+},
+]
