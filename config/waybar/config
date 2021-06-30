@@ -53,7 +53,7 @@
         "path": "/"
     },
     "temperature": {
-        "critical-threshold": 80,
+        "critical-threshold": 60,
         "format": "{icon} {temperatureC}°C",
         "format-icons": [
             "",

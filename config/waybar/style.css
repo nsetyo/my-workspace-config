@@ -96,6 +96,10 @@ window#waybar.hidden {
     color: #50fa7b;
 }
 
+#memory.critical {
+    color: #f44336;
+}
+
 #battery.warning:not(.charging) {
     background-color: #ffc107;
     animation-duration: 1000ms;
@@ -129,6 +133,10 @@ label:focus {
     background-color: #000000;
 }
 
+
+#temperature {
+    color: #50fa7b;
+}
 
 #temperature {
     color: #50fa7b;

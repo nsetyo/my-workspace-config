@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-tfile=$(mktemp)
+tfile='/home/nsetyo/.wallpaper'
 
-wget -q https://source.unsplash.com/featured/1920x1080/?landscape,city -O $tfile
+wget -q https://source.unsplash.com/1920x1080/?wallpapers,landscape -O $tfile
 
 echo $tfile
