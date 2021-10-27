@@ -48,6 +48,9 @@ bindsym Shift+XF86AudioRaiseVolume  exec --no-startup-id playerctl next
 bindsym Shift+XF86AudioLowerVolume  exec --no-startup-id playerctl previous
 bindsym Shift+XF86AudioMute         exec --no-startup-id playerctl stop
 
+bindsym Print                       exec --no-startup-id xfce4-screenshooter
+bindsym Ctrl+Print                  exec --no-startup-id xfce4-screenshooter --region
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -227,14 +230,20 @@ exec --no-startup-id gsettings set $gnome-schema icon-theme 'Papirus-Dark'
 exec --no-startup-id gsettings set $gnome-schema cursor-theme 'Adwaita'
 exec --no-startup-id gsettings set $gnome-schema font-name 'Open Sans 10'
 
-exec --no-startup-id setxkbmap -layout us -option caps:escape
+exec --no-startup-id setxkbmap -layout us -option caps:swapescape
 
 exec --no-startup-id compton&
 
-exec --no-startup-id feh --bg-fill ~/.wallpaper
+exec --no-startup-id gammastep-indicator&
+
+exec --no-startup-id xfce4-clipman&
 
 exec --no-startup-id nm-applet&
 
 exec --no-startup-id insync start
 
-exec --no-startup-id feh --bg-fill ~/.wallpaper.jpg
+exec --no-startup-id xinput set-prop 12 320 1
+
+exec --no-startup-id feh --bg-fill ~/.screenlayout/cinere.sh
+
+exec --no-startup-id feh --bg-fill ~/.wallpaper

@@ -5,12 +5,14 @@
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },
+    "editor.bracketPairColorization.enabled": true,
     "editor.dragAndDrop": false,
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
     "editor.fontSize": 14,
     "editor.formatOnSave": true,
     "editor.gotoLocation.multipleDefinitions": "goto",
+    "editor.gotoLocation.multipleTypeDefinitions": "goto",
     "editor.lineHeight": 36,
     "editor.links": false,
     "editor.matchBrackets": "never",
@@ -126,4 +128,7 @@
     "terminal.integrated.env.linux": {
         "XDEBUG_SESSION": "1"
     },
+    "codesnap.realLineNumbers": true,
+    "codesnap.backgroundColor": "#ffffff",
+    "codesnap.transparentBackground": true,
 }
