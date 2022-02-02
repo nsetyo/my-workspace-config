@@ -51,6 +51,11 @@ bindsym Shift+XF86AudioMute         exec --no-startup-id playerctl stop
 bindsym Print                       exec --no-startup-id xfce4-screenshooter
 bindsym Ctrl+Print                  exec --no-startup-id xfce4-screenshooter --region
 
+set $brightnessctl brightnessctl set
+
+bindsym XF86MonBrightnessDown       exec --no-startup-id $brightnessctl 5%-
+bindsym XF86MonBrightnessUp         exec --no-startup-id $brightnessctl +5%
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -71,28 +76,28 @@ bindsym $mod+d exec ~/.config/polybar/cuts/scripts/launcher.sh
 focus_follows_mouse no
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+bindsym $mod+j              focus left
+bindsym $mod+k              focus down
+bindsym $mod+l              focus up
+bindsym $mod+semicolon      focus right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+bindsym $mod+Left           focus left
+bindsym $mod+Down           focus down
+bindsym $mod+Up             focus up
+bindsym $mod+Right          focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
+bindsym $mod+Shift+j         move left
+bindsym $mod+Shift+k         move down
+bindsym $mod+Shift+l         move up
 bindsym $mod+Shift+semicolon move right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+bindsym $mod+Shift+Left      move left
+bindsym $mod+Shift+Down      move down
+bindsym $mod+Shift+Up        move up
+bindsym $mod+Shift+Right     move right
 
 # split in horizontal orientation
 bindsym $mod+h split h
@@ -119,11 +124,6 @@ bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
-
-set $brightnessctl brightnessctl set
-
-bindsym XF86MonBrightnessDown       exec --no-startup-id $brightnessctl 10%-
-bindsym XF86MonBrightnessUp         exec --no-startup-id $brightnessctl +10%
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -161,15 +161,6 @@ bindsym $mod+Shift+7 move container to workspace number $ws7
 bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
-
-assign [class="(?)Tor Browser"]                         $ws1
-assign [class="(?i)firefox"]                            $ws1
-assign [instance="chromium-browser"]                    $ws1
-
-assign [instance="(?i)spotify"]                         $ws4
-assign [instance="(?i)vscodium"]                        $ws3
-assign [instance="(?i)code"]                            $ws3
-assign [instance="telegram-desktop"]                    $ws5
 
 bindsym $mod+Shift+Escape exec --no-startup-id ~/.config/polybar/cuts/scripts/powermenu.sh
 
@@ -216,6 +207,17 @@ bar {
 }
 
 set $gnome-schema org.gnome.desktop.interface
+
+assign [class="(?)Tor Browser"]                 $ws1
+assign [class="(?i)firefox"]                    $ws1
+assign [instance="chromium-browser"]            $ws1
+assign [instance="(?i)spotify"]                 $ws4
+assign [instance="(?i)vscodium"]                $ws3
+assign [instance="(?i)code"]                    $ws3
+assign [instance="telegram-desktop"]            $ws5
+
+for_window [title="^zoom$"]                     floating enable
+for_window [title="bitwarden"]                  floating enable
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.

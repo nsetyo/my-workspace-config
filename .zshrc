@@ -107,3 +107,5 @@ if command -v starship &> /dev/null
 then
     eval "$(starship init zsh)"
 fi
+
+if [ -e /home/nsetyo/.nix-profile/etc/profile.d/nix.sh ]; then . /home/nsetyo/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

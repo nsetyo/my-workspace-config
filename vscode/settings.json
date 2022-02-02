@@ -15,7 +15,6 @@
     "editor.gotoLocation.multipleTypeDefinitions": "goto",
     "editor.lineHeight": 36,
     "editor.links": false,
-    "editor.matchBrackets": "never",
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.padding.top": 16,
     "editor.quickSuggestions": {
@@ -64,7 +63,8 @@
     "explorer.enableDragAndDrop": false,
     "explorer.openEditors.visible": 0,
     "files.associations": {
-        "*.neon": "yaml"
+        "*.neon": "yaml",
+        "*.neon.dist": "yaml"
     },
     "files.trimTrailingWhitespace": true,
     "html.format.indentHandlebars": true,
@@ -72,8 +72,10 @@
     "npm.fetchOnlinePackageInfo": false,
     "php.suggest.basic": false,
     "php.validate.enable": false,
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
+    "telemetry.telemetryLevel": "off",
+    "terminal.integrated.env.linux": {
+        "XDEBUG_SESSION": "1"
+    },
     "terminal.integrated.rendererType": "dom",
     "terminal.integrated.scrollback": 5000,
     "timeline.pageSize": 0,
@@ -91,9 +93,6 @@
     "[markdown]": {
         "files.trimTrailingWhitespace": false
     },
-    "[typescript]": {
-        "editor.formatOnSave": false
-    },
     "[javascript]": {
         "editor.formatOnSave": false
     },
@@ -110,8 +109,6 @@
         "wwm.better-align"
     ],
     "todo-tree.tree.showScanModeButton": false,
-    "polacode.target": "snippet",
-    "polacode.transparentBackground": true,
     "todo-tree.general.tags": [
         "BUG",
         "HACK",
@@ -122,13 +119,6 @@
         "[x]"
     ],
     "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
-    },
-    "terminal.integrated.env.linux": {
-        "XDEBUG_SESSION": "1"
-    },
-    "codesnap.realLineNumbers": true,
-    "codesnap.backgroundColor": "#ffffff",
-    "codesnap.transparentBackground": true,
+    "phpcs.warningSeverity": 1,
+    "redhat.telemetry.enabled": false,
 }

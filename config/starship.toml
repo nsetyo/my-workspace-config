@@ -1,3 +1,5 @@
+command_timeout = 850
+
 [hostname]
 ssh_only = false
 style = "bold blue"
