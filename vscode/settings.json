@@ -1,124 +1,115 @@
 {
-    "diffEditor.ignoreTrimWhitespace": false,
-    "editor.acceptSuggestionOnEnter": "off",
-    "editor.accessibilitySupport": "off",
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
-    "editor.bracketPairColorization.enabled": true,
-    "editor.dragAndDrop": false,
-    "editor.fontFamily": "Fira Code",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 14,
-    "editor.formatOnSave": true,
-    "editor.gotoLocation.multipleDefinitions": "goto",
-    "editor.gotoLocation.multipleTypeDefinitions": "goto",
-    "editor.lineHeight": 36,
-    "editor.links": false,
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.padding.top": 16,
-    "editor.quickSuggestions": {
-        "other": true,
-        "comments": false,
-        "strings": true
-    },
-    "editor.renderWhitespace": "selection",
-    "editor.rulers": [
-        80,
-        120,
-    ],
-    "editor.smoothScrolling": true,
-    "editor.snippetSuggestions": "top",
-    "editor.tabSize": 4,
-    "editor.tokenColorCustomizations": {
-        "textMateRules": [
-            {
-                "scope": [
-                    "comment",
-                    "comment.block.documentation",
-                    "comment.line.double-slash",
-                    "comment punctuation.definition.comment",
-                    "entity.name.section.markdown",
-                    "entity.name.type",
-                    "entity.other.attribute-name",
-                    "keyword.control",
-                    "keyword.control.flow.python",
-                    "keyword.control.import.python",
-                    "punctuation.definition.heading.markdown",
-                    "punctuation.definition.comment",
-                    "support",
-                    "variable.language",
-                    "variable.language.this",
-                    "variable.other.property",
-                    "variable.parameter",
-                ],
-                "settings": {
-                    "fontStyle": ""
-                }
-            },
-        ]
-    },
-    "editor.wordWrap": "off",
-    "emmet.triggerExpansionOnTab": true,
-    "explorer.enableDragAndDrop": false,
-    "explorer.openEditors.visible": 0,
-    "files.associations": {
-        "*.neon": "yaml",
-        "*.neon.dist": "yaml"
-    },
-    "files.trimTrailingWhitespace": true,
-    "html.format.indentHandlebars": true,
-    "keyboard.dispatch": "keyCode",
-    "npm.fetchOnlinePackageInfo": false,
-    "php.suggest.basic": false,
-    "php.validate.enable": false,
-    "telemetry.telemetryLevel": "off",
-    "terminal.integrated.env.linux": {
-        "XDEBUG_SESSION": "1"
-    },
-    "terminal.integrated.rendererType": "dom",
-    "terminal.integrated.scrollback": 5000,
-    "timeline.pageSize": 0,
-    "update.showReleaseNotes": false,
-    "window.closeWhenEmpty": false,
-    "window.menuBarVisibility": "toggle",
-    "workbench.activityBar.visible": true,
-    "workbench.colorTheme": "One Dark Pro",
-    "workbench.editor.enablePreviewFromQuickOpen": false,
-    "workbench.enableExperiments": false,
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.list.horizontalScrolling": true,
-    "workbench.settings.enableNaturalLanguageSearch": false,
-    "workbench.sideBar.location": "right",
-    "[markdown]": {
-        "files.trimTrailingWhitespace": false
-    },
-    "[javascript]": {
-        "editor.formatOnSave": false
-    },
-    // Extension Related Setting
-    "material-icon-theme.activeIconPack": "none",
-    "material-icon-theme.folders.color": "#42a5f5",
-    "material-icon-theme.folders.theme": "classic",
-    "material-icon-theme.saturation": 1,
-    "remote.containers.dockerPath": "/home/nsetyo/.local/bin/docker.sh",
-    "remote.containers.defaultExtensions": [
-        "eamodio.gitlens",
-        "Gruntfuggly.todo-tree",
-        "sleistner.vscode-fileutils",
-        "wwm.better-align"
-    ],
-    "todo-tree.tree.showScanModeButton": false,
-    "todo-tree.general.tags": [
-        "BUG",
-        "HACK",
-        "FIXME",
-        "TODO",
-        "XXX",
-        "[ ]",
-        "[x]"
-    ],
-    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
-    "phpcs.warningSeverity": 1,
-    "redhat.telemetry.enabled": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.accessibilitySupport": "off",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.dragAndDrop": false,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.formatOnSave": true,
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
+  "editor.lineHeight": 42,
+  "editor.links": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.padding.top": 16,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
+  "editor.renderWhitespace": "selection",
+  "editor.rulers": [80, 120],
+  "editor.smoothScrolling": true,
+  "editor.snippetSuggestions": "top",
+  "editor.tabSize": 4,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "comment",
+          "comment.block.documentation",
+          "comment.line.double-slash",
+          "comment punctuation.definition.comment",
+          "entity.name.section.markdown",
+          "entity.name.type",
+          "entity.other.attribute-name",
+          "keyword.control",
+          "keyword.control.flow.python",
+          "keyword.control.import.python",
+          "punctuation.definition.heading.markdown",
+          "punctuation.definition.comment",
+          "support",
+          "variable.language",
+          "variable.language.this",
+          "variable.other.property",
+          "variable.parameter"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "explorer.enableDragAndDrop": false,
+  "explorer.openEditors.visible": 0,
+  "files.associations": {
+    "*.neon": "yaml",
+    "*.neon.dist": "yaml"
+  },
+  "files.trimTrailingWhitespace": true,
+  "html.format.indentHandlebars": true,
+  "keyboard.dispatch": "keyCode",
+  "npm.fetchOnlinePackageInfo": false,
+  "telemetry.telemetryLevel": "off",
+  "terminal.integrated.env.linux": {
+    "XDEBUG_SESSION": "1"
+  },
+  "terminal.integrated.scrollback": 5000,
+  "timeline.pageSize": 0,
+  "update.showReleaseNotes": false,
+  "window.closeWhenEmpty": false,
+  "window.menuBarVisibility": "toggle",
+  "window.newWindowDimensions": "maximized",
+  "workbench.activityBar.visible": true,
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.enableExperiments": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.list.horizontalScrolling": true,
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "workbench.sideBar.location": "right",
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+  // Extension Related Setting
+  "material-icon-theme.activeIconPack": "none",
+  "material-icon-theme.folders.color": "#42a5f5",
+  "material-icon-theme.folders.theme": "classic",
+  "material-icon-theme.saturation": 1,
+  "remote.containers.dockerPath": "/home/nsetyo/.local/bin/docker.sh",
+  "remote.containers.defaultExtensions": [
+    "eamodio.gitlens",
+    "Gruntfuggly.todo-tree",
+    "sleistner.vscode-fileutils",
+    "wwm.better-align"
+  ],
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]"
+  ],
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  "projectManager.git.baseFolders": ["d:\\Projects"],
+  "settingsSync.ignoredSettings": ["remote.containers.dockerPath"]
 }

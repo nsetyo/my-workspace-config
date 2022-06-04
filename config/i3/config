@@ -66,7 +66,10 @@ bindsym $mod+Return exec $term
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec ~/.config/polybar/cuts/scripts/launcher.sh
+bindsym $mod+d     exec ~/.config/polybar/cuts/scripts/launcher.sh
+bindsym $mod+space exec ~/.config/polybar/cuts/scripts/launcher.sh
+
+
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec rofi -modi drun,run -show drun
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -117,10 +120,10 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+#bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+#bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -208,16 +211,17 @@ bar {
 
 set $gnome-schema org.gnome.desktop.interface
 
+assign [class="(?i)Thunderbird"]                $ws4
 assign [class="(?)Tor Browser"]                 $ws1
 assign [class="(?i)firefox"]                    $ws1
+assign [class="(?i)smplayer"]                   $ws5
 assign [instance="chromium-browser"]            $ws1
-assign [instance="(?i)spotify"]                 $ws4
+assign [instance="(?i)spotify"]                 $ws5
 assign [instance="(?i)vscodium"]                $ws3
 assign [instance="(?i)code"]                    $ws3
-assign [instance="telegram-desktop"]            $ws5
+assign [instance="telegram-desktop"]            $ws4
 
 for_window [title="^zoom$"]                     floating enable
-for_window [title="bitwarden"]                  floating enable
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
@@ -244,8 +248,6 @@ exec --no-startup-id nm-applet&
 
 exec --no-startup-id insync start
 
-exec --no-startup-id xinput set-prop 12 320 1
-
-exec --no-startup-id feh --bg-fill ~/.screenlayout/cinere.sh
+exec --no-startup-id xinput set-prop $(xinput list --id-only 'SYNA32A1:00 06CB:CE17 Touchpad') 322 1
 
 exec --no-startup-id feh --bg-fill ~/.wallpaper

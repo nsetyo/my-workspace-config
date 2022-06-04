@@ -1,6 +1,3 @@
-# If you come from bash you might have to change your $PATH.
-export PATH=$HOME/.local/bin:/$HOME/.cargo/bin:/usr/local/bin:$PATH
-
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.local/share/oh-my-zsh"
 
@@ -79,8 +76,8 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-if [ -f ~/.environment ]; then
-    source ~/.environment
+if [ -f ~/.env ]; then
+    source ~/.env
 fi
 
 # Compilation flags
