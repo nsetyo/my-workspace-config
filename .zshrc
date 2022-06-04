@@ -100,8 +100,7 @@ if [ -f ~/.local/share/cargo/env ]; then
     source ~/.local/share/cargo/env
 fi
 
-if command -v starship &> /dev/null
-then
+if command -v starship &> /dev/null; then
     eval "$(starship init zsh)"
 fi
 
