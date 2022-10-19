@@ -92,16 +92,16 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+if command -v starship &> /dev/null; then
+    eval "$(starship init zsh)"
+fi
+
 if [ -f ~/.aliases ]; then
     source ~/.aliases
 fi
 
-if [ -f ~/.local/share/cargo/env ]; then
-    source ~/.local/share/cargo/env
-fi
-
-if command -v starship &> /dev/null; then
-    eval "$(starship init zsh)"
+if [ -f $CARGO_HOME/env ]; then
+    source $CARGO_HOME/env
 fi
 
 if [ -e /home/nsetyo/.nix-profile/etc/profile.d/nix.sh ]; then . /home/nsetyo/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
