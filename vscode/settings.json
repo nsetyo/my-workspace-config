@@ -2,11 +2,7 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.acceptSuggestionOnEnter": "off",
   "editor.accessibilitySupport": "off",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
   "editor.bracketPairColorization.enabled": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.dragAndDrop": false,
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
@@ -24,7 +20,10 @@
     "strings": true
   },
   "editor.renderWhitespace": "selection",
-  "editor.rulers": [80, 120],
+  "editor.rulers": [
+    80,
+    120
+  ],
   "editor.smoothScrolling": true,
   "editor.snippetSuggestions": "top",
   "editor.tabSize": 4,
@@ -39,6 +38,7 @@
           "entity.name.section.markdown",
           "entity.name.type",
           "entity.other.attribute-name",
+          "entity.other.attribute-name.tsx",
           "keyword.control",
           "keyword.control.flow.python",
           "keyword.control.import.python",
@@ -67,10 +67,10 @@
   "html.format.indentHandlebars": true,
   "keyboard.dispatch": "keyCode",
   "npm.fetchOnlinePackageInfo": false,
+  "settingsSync.ignoredSettings": [
+    "remote.containers.dockerPath"
+  ],
   "telemetry.telemetryLevel": "off",
-  "terminal.integrated.env.linux": {
-    "XDEBUG_SESSION": "1"
-  },
   "terminal.integrated.scrollback": 5000,
   "timeline.pageSize": 0,
   "update.showReleaseNotes": false,
@@ -85,10 +85,10 @@
   "workbench.list.horizontalScrolling": true,
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.sideBar.location": "right",
-  "[markdown]": {
-    "files.trimTrailingWhitespace": false
-  },
   // Extension Related Setting
+  "css.lint.unknownAtRules": "ignore",
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
   "material-icon-theme.activeIconPack": "none",
   "material-icon-theme.folders.color": "#42a5f5",
   "material-icon-theme.folders.theme": "classic",
@@ -100,6 +100,11 @@
     "sleistner.vscode-fileutils",
     "wwm.better-align"
   ],
+  "rust-analyzer.inlayHints.parameterHints.enable": false,
+  "rust-analyzer.inlayHints.chainingHints.enable": false,
+  "rust-analyzer.inlayHints.typeHints.enable": false,
+  "rust-analyzer.inlayHints.renderColons": false,
+  "rust-analyzer.lens.implementations.enable": false,
   "todo-tree.general.tags": [
     "BUG",
     "HACK",
@@ -109,10 +114,6 @@
     "[ ]",
     "[x]"
   ],
-  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
-  "projectManager.git.baseFolders": ["d:\\Projects"],
-  "settingsSync.ignoredSettings": ["remote.containers.dockerPath"],
-  "[vue]": {
-    "editor.wordWrap": "wordWrapColumn"
-  }
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)"
+
 }
