@@ -62,7 +62,6 @@
   },
   "emmet.triggerExpansionOnTab": true,
   "explorer.enableDragAndDrop": false,
-  "explorer.openEditors.visible": 0,
   "files.associations": {
     "*.neon": "yaml",
     "*.neon.dist": "yaml"
