@@ -9,8 +9,6 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-set $brightnessctl  brightnessctl set
-set $gnome-schema   org.gnome.desktop.interface
 set $mod            mod4
 set $ws1            1
 set $ws2            2
@@ -23,6 +21,14 @@ set $ws8            8
 set $ws9            9
 set $ws0            0
 set $term           kitty
+
+set $polkit-agent   /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+set $locker         /home/nsetyo/Documents/Project/config/scripts/lock.sh
+set $brightnessctl  brightnessctl set
+set $gnome-schema   org.gnome.desktop.interface
+set $builtin-kb     'AT Translated Set 2 keyboard'
+set $touchpad       'SYNA32A1:00 06CB:CE17 Touchpad'
+
 
 default_border                      pixel
 # Font for window titles. Will also be used by the bar unless a different font
@@ -215,20 +221,18 @@ assign [instance="(?i)vscodium"]                $ws3
 assign [instance="(?i)code"]                    $ws3
 assign [instance="telegram-desktop"]            $ws4
 
-# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
-# screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -S 1 -i ~/.wallpaper --nofork
-
-# NetworkManager is the most popular way to manage wireless networks on Linux,
-# and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id gsettings set $gnome-schema gtk-theme    'Arc-Dark'
 exec --no-startup-id gsettings set $gnome-schema icon-theme   'Papirus-Dark'
 exec --no-startup-id gsettings set $gnome-schema cursor-theme 'Adwaita'
 exec --no-startup-id gsettings set $gnome-schema font-name    'Open Sans 10'
-exec --no-startup-id setxkbmap -device $(xinput list --id-only 'AT Translated Set 2 keyboard') -layout us -option caps:swapescape
-exec --no-startup-id xinput set-prop 'SYNA32A1:00 06CB:CE17 Touchpad' 'libinput Tapping Enabled' 1
-exec --no-startup-id compton&
+
+exec --no-startup-id setxkbmap -device $(xinput list --id-only $builtin-kb) -option caps:swapescape
+exec --no-startup-id xinput set-prop   $touchpad 'libinput Tapping Enabled' 1
+
+exec --no-startup-id $polkit-agent
+exec --no-startup-id xss-lock --transfer-sleep-lock -- $locker
 exec --no-startup-id feh --bg-fill ~/.wallpaper
+exec --no-startup-id compton&
 exec --no-startup-id gammastep-indicator&
 exec --no-startup-id insync start
 exec --no-startup-id nm-applet&

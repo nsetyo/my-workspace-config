@@ -105,3 +105,5 @@ if [ -f $CARGO_HOME/env ]; then
 fi
 
 if [ -e /home/nsetyo/.nix-profile/etc/profile.d/nix.sh ]; then . /home/nsetyo/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+

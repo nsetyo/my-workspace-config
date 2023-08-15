@@ -57,11 +57,7 @@ case $chosen in
         fi
         ;;
     $lock)
-		if [[ -f /usr/bin/i3lock ]]; then
-			i3lock -c 000000 --nofork
-		elif [[ -f /usr/bin/betterlockscreen ]]; then
-			betterlockscreen -l
-		fi
+		loginctl lock-session
         ;;
     $suspend)
 		ans=$(confirm_exit &)

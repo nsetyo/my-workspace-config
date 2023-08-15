@@ -80,7 +80,7 @@
   "window.menuBarVisibility": "toggle",
   "window.newWindowDimensions": "maximized",
   "workbench.activityBar.visible": true,
-  "workbench.colorTheme": "Community Material Theme",
+  "workbench.colorTheme": "One Dark Pro Darker",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.enableExperiments": false,
   "workbench.iconTheme": "material-icon-theme",
@@ -109,5 +109,8 @@
     "[ ]",
     "[x]"
   ],
-  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)"
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
