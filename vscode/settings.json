@@ -71,6 +71,7 @@
   "html.format.indentHandlebars": true,
   "keyboard.dispatch": "keyCode",
   "npm.fetchOnlinePackageInfo": false,
+  "settingsSync.ignoredExtensions": [],
   "settingsSync.ignoredSettings": ["dev.containers.dockerPath"],
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.scrollback": 5000,
@@ -110,7 +111,13 @@
     "[x]"
   ],
   "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
