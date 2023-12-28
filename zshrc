@@ -42,7 +42,7 @@ ZSH_THEME="robbyrussell"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -76,9 +76,11 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-if [ -f ~/.env ]; then
-    source ~/.env
-fi
+if [ -f ~/.aliases ]; then source ~/.aliases; fi
+
+if [ -f ~/.env ]; then source ~/.env; fi
+
+if [ -f $CARGO_HOME/env ]; then source $CARGO_HOME/env; fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -92,18 +94,6 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-if command -v starship &> /dev/null; then
-    eval "$(starship init zsh)"
-fi
-
-if [ -f ~/.aliases ]; then
-    source ~/.aliases
-fi
-
-if [ -f $CARGO_HOME/env ]; then
-    source $CARGO_HOME/env
-fi
-
-if [ -e /home/nsetyo/.nix-profile/etc/profile.d/nix.sh ]; then . /home/nsetyo/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+if command -v starship &> /dev/null; then eval "$(starship init zsh)"; fi
 
 

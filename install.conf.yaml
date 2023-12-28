@@ -1,0 +1,25 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ["~"]
+
+- link:
+    ~/.aliases: aliases
+    ~/.bashrc: bashrc
+    ~/.inputrc: inputrc
+    ~/.npmrc: npmrc
+    ~/.vimrc: vimrc
+    ~/.zshrc: zshrc
+    ~/.config/starship.toml:
+      create: true
+      path: config/starship.toml
+    ~/.env:
+      if: "[ -f .env ]"
+      path: .env
+
+- create:
+    - ~/.vim/undo-history
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
