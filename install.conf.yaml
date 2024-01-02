@@ -7,6 +7,19 @@
 - link:
     ~/.aliases: aliases
     ~/.bashrc: bashrc
+    ~/.config/betterlockscreenrc: config/betterlockscreenrc
+    ~/.config/gammastep: config/gammastep
+    ~/.config/gtk-3.0: config/gtk-3.0
+    ~/.config/i3: config/i3
+    ~/.config/kitty: config/kitty
+    ~/.config/mako: config/mako
+    ~/.config/mpv: config/mpv
+    ~/.config/polybar: config/polybar
+    ~/.config/sway: config/sway
+    ~/.config/swaylock: config/swaylock
+    ~/.config/waybar: config/waybar
+    ~/.config/wofi: config/wofi
+    ~/.config/zathura: config/zathura
     ~/.inputrc: inputrc
     ~/.npmrc: npmrc
     ~/.vimrc: vimrc
