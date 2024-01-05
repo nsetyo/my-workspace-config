@@ -15,6 +15,7 @@
     ~/.config/kitty: config/kitty
     ~/.config/mako: config/mako
     ~/.config/mpv: config/mpv
+    ~/.config/nvim: config/nvim
     ~/.config/polybar: config/polybar
     ~/.config/sway: config/sway
     ~/.config/swaylock: config/swaylock

@@ -1,3 +1,4 @@
-# Example_config
+# 💤 LazyVim
 
-This can be used as an example custom config for NvChad. Do check the https://github.com/NvChad/nvcommunity
+A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
+Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
