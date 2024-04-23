@@ -8,6 +8,10 @@
 #j::Focus("down")
 #k::Focus("up")
 #l::Focus("right")
+#Left::Focus("left")
+#Right::Focus("right")
+#Up::Focus("up")
+#Down::Focus("down")
 #+[::CycleFocus("previous")
 #+]::CycleFocus("next")
 
@@ -16,13 +20,13 @@
 #+j::Move("down")
 #+k::Move("up")
 #+l::Move("right")
+#+Left::Move("left")
+#+Right::Move("right")
+#+Up::Move("up")
+#+Down::Move("down")
 #+Enter::Promote()
 
 ; Stack windows
-#Left::Stack("left")
-#Right::Stack("right")
-#Up::Stack("up")
-#Down::Stack("down")
 #;::Unstack()
 #[::CycleStack("previous")
 #]::CycleStack("next")
