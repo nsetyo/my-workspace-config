@@ -37,4 +37,9 @@
     - ~/.vim/undo-history
 
 - shell:
-    - [git submodule update --init --recursive, Installing submodules]
+    - git submodule update --init --recursive
+    - bash -c 'if [[ -f /proc/sys/fs/binfmt_misc/WSLInterop ]]; then cp ./windows/komorebi.json /mnt/c/Users/sxn002/komorebi.json;fi;'
+    - bash -c 'if [[ -f /proc/sys/fs/binfmt_misc/WSLInterop ]]; then cp ./windows/applications.yaml /mnt/c/Users/sxn002/applications.yaml;fi;'
+    - bash -c 'if [[ -f /proc/sys/fs/binfmt_misc/WSLInterop ]]; then cp ./windows/komorebi.ahk /mnt/c/Users/sxn002/komorebi.ahk;fi;'
+    - bash -c 'if [[ -f /proc/sys/fs/binfmt_misc/WSLInterop ]]; then cp ./windows/komorebic.lib.ahk /mnt/c/Users/sxn002/komorebic.lib.ahk;fi;'
+    - bash -c 'if [[ -f /proc/sys/fs/binfmt_misc/WSLInterop ]]; then cp ./windows/whkdrc /mnt/c/Users/sxn002/.config/whkdrc;fi;'
