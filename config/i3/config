@@ -23,7 +23,7 @@ set $ws0            0
 set $term           kitty
 
 set $polkit-agent   /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-set $locker         /home/nsetyo/Documents/Project/config/scripts/lock.sh
+set $locker         /home/nsetyo/Documents/Project/dotfiles/scripts/lock.sh
 set $brightnessctl  brightnessctl set
 set $gnome-schema   org.gnome.desktop.interface
 set $builtin-kb     'AT Translated Set 2 keyboard'
@@ -48,9 +48,10 @@ floating_modifier                   $mod
 focus_follows_mouse                 no
 title_align                         center
 
-for_window [class="^.*"]            border pixel 1
-for_window [title="^.*"]            border pixel 1
-for_window [title="^zoom$"]         floating enable
+for_window [class="^.*"]                border pixel 1
+for_window [title="^.*"]                border pixel 1
+for_window [window_type="notification"] floating enable
+for_window [title="^zoom$"]             floating enable
 
 bindcode 248                        exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
 bindsym XF86AudioLowerVolume        exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
