@@ -97,3 +97,10 @@ if [ -f $CARGO_HOME/env ]; then source $CARGO_HOME/env; fi
 if command -v starship &> /dev/null; then eval "$(starship init zsh)"; fi
 
 
+
+# bun completions
+[ -s "/home/nsetyo/.local/bun/_bun" ] && source "/home/nsetyo/.local/bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.local/bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
