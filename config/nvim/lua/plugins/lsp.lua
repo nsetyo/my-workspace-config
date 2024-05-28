@@ -11,6 +11,13 @@ return {{
                         }
                     }
                 }
+            },
+            tsserver = {
+                settings = {
+                    diagnostics = {
+                        ignoredCodes = {80001}
+                    }
+                }
             }
         },
         setup = {}

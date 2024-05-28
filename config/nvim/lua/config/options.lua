@@ -5,4 +5,5 @@ local opt = vim.opt
 
 opt.colorcolumn = '100'
 opt.relativenumber = false
+opt.tabstop = 4
 opt.winbar = "%=%m %f"
