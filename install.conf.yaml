@@ -7,7 +7,6 @@
 - link:
     ~/.aliases: aliases
     ~/.bashrc: bashrc
-    ~/.config/alacritty: config/alacritty
     ~/.config/betterlockscreenrc: config/betterlockscreenrc
     ~/.config/gammastep: config/gammastep
     ~/.config/gtk-3.0: config/gtk-3.0
