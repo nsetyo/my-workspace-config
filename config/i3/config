@@ -54,6 +54,7 @@ for_window [window_type="notification"] floating enable
 for_window [title="^zoom$"]             floating enable
 
 bindcode 248                        exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
 bindsym XF86AudioLowerVolume        exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
 bindsym XF86AudioRaiseVolume        exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
 bindsym XF86AudioMute               exec --no-startup-id pactl set-sink-mute   @DEFAULT_SINK@ toggle
@@ -76,7 +77,7 @@ bindsym mod1+XF86AudioRaiseVolume   exec --no-startup-id $brightnessctl +5%
 
 
 # start a terminal
-bindsym $mod+Return                 exec $term
+bindsym $mod+Return                 exec $term -e tmux new -As0
 
 # kill focused window
 bindsym $mod+Shift+q                kill
