@@ -77,7 +77,7 @@ bindsym mod1+XF86AudioRaiseVolume   exec --no-startup-id $brightnessctl +5%
 
 
 # start a terminal
-bindsym $mod+Return                 exec $term -e tmux new -As0
+bindsym $mod+Return                 exec $term -e tmux new -As main
 
 # kill focused window
 bindsym $mod+Shift+q                kill
