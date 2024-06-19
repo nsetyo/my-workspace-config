@@ -32,7 +32,7 @@ set $touchpad       'SYNA32A1:00 06CB:CE17 Touchpad'
 
 default_border                      pixel
 # Font for window titles. Will also be used by the bar unless a different font
-font                                pango:Fira Code 9
+font                                pango:FiraCode Nerd Font 9
 gaps                                inner 6
 gaps                                outer 1
 gaps                                top   6
