@@ -5,6 +5,6 @@ local opt = vim.opt
 
 opt.colorcolumn = "100"
 opt.list = true
--- opt.relativenumber = false
+opt.listchars = { lead = "·", tab = "· ", trail = "·" }
 opt.tabstop = 4
 opt.winbar = "%=%m %f"

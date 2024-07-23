@@ -3,7 +3,7 @@ return {
     "nvimdev/dashboard-nvim",
     lazy = false,
     opts = function(_, opts)
-      local logo =  {
+      local logo = {
         [[                                                                       ]],
         [[                                                                     ]],
         [[       ████ ██████           █████      ██                     ]],
