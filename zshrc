@@ -60,47 +60,25 @@ COMPLETION_WAITING_DOTS="true"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+export BUN_INSTALL="$HOME/.local/bun"
+
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+[ -s "${BUN_INSTALL}/_bun" ] && source "${BUN_INSTALL}/_bun"
+
+[ -f ~/.aliases ] && source ~/.aliases
+
+[ -f ~/.env ] && source ~/.env
+
+[ -f $CARGO_HOME/env ] && source $CARGO_HOME/env
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker docker-compose sudo rust)
+plugins=(asdf git docker docker-compose sudo rust)
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-if [ -f ~/.aliases ]; then source ~/.aliases; fi
-
-if [ -f ~/.env ]; then source ~/.env; fi
-
-if [ -f $CARGO_HOME/env ]; then source $CARGO_HOME/env; fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
 if command -v starship &> /dev/null; then eval "$(starship init zsh)"; fi
-
-
-
-# bun completions
-[ -s "/home/nsetyo/.local/bun/_bun" ] && source "/home/nsetyo/.local/bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.local/bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
