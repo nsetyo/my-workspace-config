@@ -22,7 +22,6 @@
     ~/.config/wofi: config/wofi
     ~/.config/zathura: config/zathura
     ~/.inputrc: inputrc
-    ~/.npmrc: npmrc
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
     ~/.config/starship.toml:
