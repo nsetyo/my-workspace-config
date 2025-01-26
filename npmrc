@@ -1,2 +1,2 @@
-cache=${HOME}/.cache/npm
 prefix=${HOME}/.local/
+cache=${HOME}/.cache/npm

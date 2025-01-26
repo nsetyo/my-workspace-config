@@ -66,10 +66,8 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 [ -s "${BUN_INSTALL}/_bun" ] && source "${BUN_INSTALL}/_bun"
 
-[ -f ~/.aliases ] && source ~/.aliases
-
-[ -f ~/.env ] && source ~/.env
-
+[ -f "${HOME}/.aliases" ] && source "${HOME}/.aliases"
+[ -f "${HOME}/.env" ] && source "${HOME}/.env"
 [ -f $CARGO_HOME/env ] && source $CARGO_HOME/env
 
 # Which plugins would you like to load?

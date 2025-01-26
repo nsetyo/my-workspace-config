@@ -7,6 +7,11 @@
 - link:
     ~/.aliases: aliases
     ~/.bashrc: bashrc
+    ~/.inputrc: inputrc
+    ~/.npmrc: npmrc
+    ~/.vimrc: vimrc
+    ~/.zshenv: env
+    ~/.zshrc: zshrc
     ~/.config/betterlockscreenrc: config/betterlockscreenrc
     ~/.config/gammastep: config/gammastep
     ~/.config/gtk-3.0: config/gtk-3.0
@@ -21,18 +26,12 @@
     ~/.config/waybar: config/waybar
     ~/.config/wofi: config/wofi
     ~/.config/zathura: config/zathura
-    ~/.inputrc: inputrc
-    ~/.vimrc: vimrc
-    ~/.zshrc: zshrc
     ~/.config/starship.toml:
       create: true
       path: config/starship.toml
     ~/.config/tmux/tmux.conf:
       create: true
       path: config/tmux/tmux.conf
-    ~/.env:
-      if: "[ -f .env ]"
-      path: .env
 
 - create:
     - ~/.vim/undo-history
